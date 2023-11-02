@@ -1,4 +1,16 @@
 {
-  "version": "1.1.0",
-  "host": "https://www.555dy.me"
+  "version": "1.3.0",
+  "host": "https://5movie.online",
+  "review": "0",
+  "live_m3u8s": [".m3u8"],
+  "rank_exclude_titles": ["福利"],
+  "admob": {
+    "open": 1,
+    "home": "ca-app-pub-5272462489798237/1180690502",
+    "filter": "ca-app-pub-5272462489798237/3531521677",
+    "detail": "ca-app-pub-5272462489798237/5429543811",
+    "interstitial": "ca-app-pub-5272462489798237/1082232559",
+    "reward": "ca-app-pub-5272462489798237/8295380300",
+    "openad": "ca-app-pub-5272462489798237/8497688144"
+  }
 }
