@@ -1,13 +1,20 @@
 {
-  "version": "1.4.1",
+  "version": "1.5.1",
   "host": "https://5movie.online",
+  "tv_macHost": "http://tv.haoqu99.com/",
+  "tv_mobileHost": "http://m.haoqu99.com/",
   "review": "0",
-  "live_m3u8s": [".m3u8"],
-  "rank_exclude_titles": ["福利"],
+  "live_m3u8s": [
+    ".m3u8"
+  ],
+  "rank_exclude_titles": [
+    "福利"
+  ],
   "admob": {
     "open": 1,
     "home": "ca-app-pub-5272462489798237/1180690502",
     "filter": "ca-app-pub-5272462489798237/3531521677",
+    "tv": "ca-app-pub-5272462489798237/5533092382",
     "detail": "ca-app-pub-5272462489798237/5429543811",
     "interstitial": "ca-app-pub-5272462489798237/1082232559",
     "reward": "ca-app-pub-5272462489798237/8295380300",
@@ -16,23 +23,24 @@
   "search_hint": "在线观看",
   "search_engines": [
     {
-      "title":"Google",
-      "url":"https://www.google.com/search?q=GOOGLE_GOOGLE",
+      "title": "Google",
+      "url": "https://www.google.com/search?q=GOOGLE_GOOGLE",
       "replaced": "GOOGLE_GOOGLE"
     },
     {
-      "title":"Bing",
-      "url":"https://www.bing.com/search?q=BING_BING",
+      "title": "Bing",
+      "url": "https://www.bing.com/search?q=BING_BING",
       "replaced": "BING_BING"
     },
     {
-      "title":"Baidu",
-      "url":"https://www.baidu.com/s?wd=BAIDU_BAIDU",
+      "title": "Baidu",
+      "url": "https://www.baidu.com/s?wd=BAIDU_BAIDU",
       "replaced": "BAIDU_BAIDU"
     },
     {
-      "title":"Sogou",
-      "url":"https://m.sogou.com/web/searchList.jsp?keyword=SOGOU_SOGOU",
+      "title": "Sogou",
+      "url": "https://m.sogou.com/web/searchList.jsp?keyword=SOGOU_SOGOU",
       "replaced": "SOGOU_SOGOU"
-    }]
+    }
+  ]
 }
