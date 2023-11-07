@@ -1,5 +1,5 @@
 {
-  "version": "1.5.1",
+  "version": "1.5.2",
   "host": "https://5movie.online",
   "tv_macHost": "http://tv.haoqu99.com/",
   "tv_mobileHost": "http://m.haoqu99.com/",
@@ -14,7 +14,7 @@
     "open": 1,
     "home": "ca-app-pub-5272462489798237/1180690502",
     "filter": "ca-app-pub-5272462489798237/3531521677",
-    "tv": "ca-app-pub-5272462489798237/5533092382",
+    "tv": "",
     "detail": "ca-app-pub-5272462489798237/5429543811",
     "interstitial": "ca-app-pub-5272462489798237/1082232559",
     "reward": "ca-app-pub-5272462489798237/8295380300",
