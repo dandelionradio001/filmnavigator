@@ -1,5 +1,5 @@
 {
-  "version": "1.5.2",
+  "version": "1.5.3",
   "host": "https://5movie.online",
   "tv_macHost": "http://tv.haoqu99.com/",
   "tv_mobileHost": "http://m.haoqu99.com/",
@@ -23,14 +23,14 @@
   "search_hint": "在线观看",
   "search_engines": [
     {
-      "title": "Google",
-      "url": "https://www.google.com/search?q=GOOGLE_GOOGLE",
-      "replaced": "GOOGLE_GOOGLE"
-    },
-    {
       "title": "Bing",
       "url": "https://www.bing.com/search?q=BING_BING",
       "replaced": "BING_BING"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/search?q=GOOGLE_GOOGLE",
+      "replaced": "GOOGLE_GOOGLE"
     },
     {
       "title": "Baidu",
