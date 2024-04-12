@@ -1,5 +1,5 @@
 {
-  "version": "1.6.3",
+  "version": "1.6.5",
   "host": "https://5movie.online",
   "tv_macHost": "http://tv.haoqu99.com/",
   "tv_mobileHost": "http://m.haoqu99.com/",
@@ -69,12 +69,12 @@
     "央视",
     "卫视",
     "综合",
-    "极速港澳台",
+    "港澳台",
     "体育",
     "百事通IPTV",
     "江西移动IPTV"
   ],
-  "excluded_channel_texts": ["下载安装新版"],
+  "excluded_channel_texts": ["下载安装新版","极速港澳台"],
   "acceptLanguageHeader": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
   "reward_channels": [
     "港澳台"
