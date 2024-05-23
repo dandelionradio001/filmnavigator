@@ -1,5 +1,5 @@
 {
-  "version": "1.6.6",
+  "version": "1.6.7",
   "host": "https://55flix.com/",
   "tv_macHost": "http://tv.haoqu99.com/",
   "tv_mobileHost": "http://m.haoqu99.com/",
@@ -71,8 +71,7 @@
     "综合",
     "港澳台",
     "体育",
-    "百事通IPTV",
-    "江西移动IPTV"
+    "咪咕视频"
   ],
   "excluded_channel_texts": ["下载安装新版","极速港澳台"],
   "acceptLanguageHeader": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
