@@ -1,5 +1,5 @@
 {
-  "version": "8.9.9.9",
+  "version": "9.9.9.9",
   "host": "https://www.5movie.online/index/home.html",
   "tv_macHost": "http://tv.haoqu99.com/",
   "tv_mobileHost": "http://m.haoqu99.com/",
@@ -16,7 +16,7 @@
     "福利"
   ],
   "admob": {
-    "open": 1,
+    "open": 0,
     "home": "ca-app-pub-5272462489798237/1180690502",
     "filter": "ca-app-pub-5272462489798237/3531521677",
     "tv": "ca-app-pub-5272462489798237/5533092382",
