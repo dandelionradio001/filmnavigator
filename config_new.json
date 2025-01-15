@@ -4,7 +4,7 @@
   "host": "https://www.5movie.online",
   "tv_macHost": "http://tv.haoqu99.com/",
   "tv_mobileHost": "http://m.haoqu99.com/",
-  "review": "0",
+  "review": "1",
   "review_live_flag": "TEST",
   "live_m3u8s": [
     ".m3u8",
