@@ -1,10 +1,11 @@
 {
-  "version": "1.0.4",
+  "version": "1.0.5",
   "home": "https://www.wuwu4dy.wiki/index/home.html",
   "host": "https://www.wuwu4dy.wiki",
   "tv_macHost": "http://tv.haoqu99.com/",
   "tv_mobileHost": "http://m.haoqu99.com/",
   "review": "0",
+  "load_strategy": 1,
   "review_live_flag": "TEST",
   "live_m3u8s": [
     ".m3u8",
