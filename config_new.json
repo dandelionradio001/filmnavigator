@@ -17,6 +17,12 @@
   "rank_exclude_titles": [
     "福利"
   ],
+  "cookies": [
+    {
+      "name": "hasVisitedIndex",
+      "value": "true"
+    }
+  ],
   "admob": {
     "open": 1,
     "home": "ca-app-pub-5272462489798237/1626288928",
