@@ -1,5 +1,5 @@
 {
-  "version": "2.2.1",
+  "version": "2.2.2",
   "home": "https://www.wuwu4dy.wiki/index/home.html",
   "host": "https://www.wuwu4dy.wiki",
   "tv_macHost": "http://tv.haoqu99.com/",
@@ -25,7 +25,7 @@
     "福利"
   ],
   "admob": {
-    "open": 0,
+    "open": 1,
     "home": "ca-app-pub-5272462489798237/1626288928",
     "filter": "ca-app-pub-5272462489798237/9428757328",
     "tv": "ca-app-pub-5272462489798237/4008909686",
