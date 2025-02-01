@@ -1,11 +1,11 @@
 {
-  "version": "2.2.2",
+  "version": "2.2.3",
   "home": "https://www.wuwu4dy.wiki/index/home.html",
   "host": "https://www.wuwu4dy.wiki",
   "tv_macHost": "http://tv.haoqu99.com/",
   "tv_mobileHost": "http://m.haoqu99.com/",
   "review": "0",
-  "load_strategy": 1,
+  "load_strategy": 2,
   "progress": 10,
   "review_live_flag": "TEST",
   "cookies": [
