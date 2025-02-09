@@ -1,10 +1,20 @@
 {
-  "version": "2.3.3",
+  "version": "2.4.1",
   "home": "https://www.wuwu4dy.wiki/index/home.html",
   "host": "https://www.wuwu4dy.wiki",
   "tv_macHost": "http://tv.haoqu99.com/",
   "tv_mobileHost": "http://m.haoqu99.com/",
   "review": "0",
+  "strategies": {
+    "home": 1,
+    "detail": 2,
+    "filter": 2,
+    "category": 2,
+    "netflix": 2,
+    "search": 2,
+    "rank": 1,
+    "tag": 1
+  },
   "load_strategy": 2,
   "progress": 80,
   "review_live_flag": "TEST",
