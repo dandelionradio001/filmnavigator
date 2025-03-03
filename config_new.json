@@ -1,5 +1,5 @@
 {
-  "version": "2.4.5",
+  "version": "2.4.6",
   "home": "https://www.55dy1.com/index/home.html",
   "host": "https://www.55dy1.com",
   "tv_macHost": "http://tv.haoqu99.com/",
@@ -9,7 +9,7 @@
     "home": 1,
     "detail": 2,
     "filter": 2,
-    "category": 1,
+    "category": 2,
     "netflix": 2,
     "search": 2,
     "rank": 1,
