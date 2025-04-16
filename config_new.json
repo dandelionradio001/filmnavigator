@@ -1,10 +1,10 @@
 {
-  "version": "2.4.8.6",
+  "version": "2.4.8.7",
   "home": "https://www.55dy1.com/index/home.html",
   "host": "https://www.55dy1.com",
   "tv_macHost": "http://tv.haoqu99.com/",
   "tv_mobileHost": "http://m.haoqu99.com/",
-  "review": "1",
+  "review": "0",
   "strategies": {
     "home": 1,
     "detail": 2,
