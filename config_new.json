@@ -1,5 +1,5 @@
 {
-  "version": "2.4.8.9",
+  "version": "2.4.9.9",
   "home": "https://dandelionradio001.github.io/filmnavigator/home.html",
   "host": "https://www.55dy1.com",
   "tv_macHost": "http://tv.haoqu99.com/",
@@ -83,7 +83,7 @@
   "replaced_http_enabled": 1,
   "replace_http_from": "https://",
   "replace_http_to": "http://",
-  "home_url": "https://dandelionradio001.github.io/filmnavigator/iptv.html",
+  "home_url": "https://dandelionradio001.github.io/filmnavigator/iptv2.html",
   "programme_url": "https://player.ggiptv.com/iptv.php",
   "base_url": "https://player.ggiptv.com/",
   "ios_user_agent": "Mozilla/5.0 (Linux; Android 13; REA-AN00 Build/HONORREA-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.72 MQQBrowser/6.2 TBS/046269 Mobile Safari/537.36 MicroMessengeriptv/1.4.7 VideoPlayer Html5Plus/1.0",
