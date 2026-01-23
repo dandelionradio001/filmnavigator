@@ -1,5 +1,5 @@
 {
-  "version": "2.4.9.9.2",
+  "version": "2.4.9.9.3",
   "home": "https://dandelionradio001.github.io/filmnavigator/home.html",
   "host": "https://www.55dy1.com",
   "tv_macHost": "http://tv.haoqu99.com/",
@@ -36,10 +36,7 @@
   ],
   "admob": {
     "open": 1,
-    "home": "ca-app-pub-5272462489798237/1626288928",
-    "filter": "ca-app-pub-5272462489798237/9428757328",
     "tv": "ca-app-pub-5272462489798237/4008909686",
-    "detail": "ca-app-pub-5272462489798237/7924103967",
     "interstitial": "ca-app-pub-5272462489798237/3395468493",
     "reward": "ca-app-pub-5272462489798237/4136902198",
     "openad": "ca-app-pub-5272462489798237/3945330507"
