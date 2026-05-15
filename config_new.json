@@ -1,5 +1,5 @@
 {
-  "version": "2.8.9.9.6",
+  "version": "2.8.9.9.7",
   "home": "https://dandelionradio001.github.io/filmnavigator/home.html",
   "host": "https://www.555a9.com",
   "tv_macHost": "http://tv.haoqu99.com/",
@@ -90,8 +90,7 @@
   "include_channels": [
     "央视",
     "卫视",
-    "体育",
-    "台湾台"
+    "体育"
   ],
   "excluded_channel_texts": [
     "下载安装新版","咪咕视频","央视频"
