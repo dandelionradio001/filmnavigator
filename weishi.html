@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>卫视頻道列表</title>
+	<meta charset="utf-8">
+	<meta name="application-name" content="網絡電視直播移動版,IPTV電視直播手机版" />
+	<meta name="title" content="卫视頻道列表" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="網絡電視,網路電視,電視直播,手机版,電視,免費電視">
+	<meta name="description" content="網絡電視,網路電視,全球電視直播,高清電視,免費電視,IPTV電視直播手机版">
+	<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+	<script src="https://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="https://apps.bdimg.com/libs/jquerymobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+	<script src="js/md5.js"></script>
+	<script src="/common.js?t=20240709"></script>
+	<script type="text/javascript">
+		function downad(url) {
+			var dtask = plus.downloader.createDownload(url, {}, function(d, status) {
+				if (status == 200) { // 下载成功  
+					var path = d.filename;
+					plus.runtime.install(path);
+				} else { //下载失败  
+					alert("Download failed: " + status);
+				}
+			});
+			dtask.start();
+		}
+	</script>
+	<style type="text/css">
+		span {
+			font-size: 14px;
+		}
+	</style>
+	<script>
+		function showAd() {
+			if (adView) {
+				return;
+			}
+			showAdView('1710223350');
+		}
+		document.addEventListener("plusready", showAd, false);
+	</script>
+</head>
+
+<body>
+	<div data-role="page">
+		<div id="ad" style="width:100%;">
+			<div id="ad-container" style="width: 100%;"><a onclick="clickeda('');"><img src="https://d.iptv200.com/ad/7533370191402778604.jpg" width="100%" height="200px"></a></div>
+		</div>
+		<!--top-->
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true" data-divider-theme="a" data-filter="true" data-filter-placeholder="搜寻">
+				<li><a onclick="clicked('iptv.php?act=play&token=bc9c70b86767bc89b4c8fb5d095323a6&tid=ws&id=1');" data-ajax="false">湖南卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=4a57252c81c5a0679878b0b33103ce0a&tid=ws&id=2');" data-ajax="false">江苏卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=157a5d19f8b2cd6c1c8a3f386032d2a5&tid=ws&id=3');" data-ajax="false">浙江卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=cd033b387db07c0c4bf338d0ccf8f985&tid=ws&id=4');" data-ajax="false">东方卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=98967d64ecbcc401b6d0615e7696fddf&tid=ws&id=5');" data-ajax="false">北京卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=ec9c662ed61edd6e5dd29dc49cb63ae2&tid=ws&id=6');" data-ajax="false">深圳卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=051b62246d418ba36830d75d2c45a273&tid=ws&id=7');" data-ajax="false">广东卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=ae03b9793390fd96ddb593765d962f94&tid=ws&id=8');" data-ajax="false">安徽卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=ba8d2cbbbd737f14bb049d807c42cb6f&tid=ws&id=9');" data-ajax="false">东南卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=5b235e937afb9c8e4f74b5699cfc5e02&tid=ws&id=10');" data-ajax="false">河北卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=52f38c201385338972c93af7a6ff161c&tid=ws&id=11');" data-ajax="false">黑龙江卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=d6a309047907a0116677e715829c4f67&tid=ws&id=12');" data-ajax="false">湖北卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=c1bddcaf897244c5704b9034d2b85d27&tid=ws&id=13');" data-ajax="false">江西卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=1da7415cdeefce0cd12b90b16c63db9f&tid=ws&id=14');" data-ajax="false">辽宁卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=53a0c25c68a7bb7c6b158eed318be071&tid=ws&id=15');" data-ajax="false">海南卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=041e2217140bfad1f5fddf84801cb590&tid=ws&id=16');" data-ajax="false">山东卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=5e671c8c8070083b0f0a14909afa7c26&tid=ws&id=17');" data-ajax="false">四川卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=592a8c2b3e0879276a8f18ee0685f6b6&tid=ws&id=18');" data-ajax="false">天津卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=9c467ae0cce1a5c3106ef0dc0694ac5f&tid=ws&id=19');" data-ajax="false">重庆卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=ec5890a165c8181dfb80a7603839c4e9&tid=ws&id=20');" data-ajax="false">贵州卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=7c545116f3acd39a0495d1c641579fdf&tid=ws&id=21');" data-ajax="false">吉林卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=16db0d05f35b963842645d7a2bada126&tid=ws&id=22');" data-ajax="false">广西卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=037d78c1b9207dfc8ee42635cf8dcffe&tid=ws&id=23');" data-ajax="false">河南卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=a857c6b697cca9f7d9ad9f9c97ca7a87&tid=ws&id=24');" data-ajax="false">甘肃卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=2ad281e4696965decbbfd07de8ff8d5f&tid=ws&id=25');" data-ajax="false">青海卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=f47e9ca29317582dd5cf3fbc383c5876&tid=ws&id=26');" data-ajax="false">云南卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=cc4e78cd03960d43ebd92d3dded891db&tid=ws&id=27');" data-ajax="false">内蒙古卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=f09628b0bb43b7d1ad100e63e8dddec5&tid=ws&id=28');" data-ajax="false">山西卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=757edc1fd193b03bc0fe1e1fc86ae594&tid=ws&id=29');" data-ajax="false">陕西卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=2d831c5a1ee29dfd124839f9243df1a2&tid=ws&id=30');" data-ajax="false">兵团卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=58a548c2c85c6a82a93d91d6ce21c1e8&tid=ws&id=31');" data-ajax="false">新疆卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=1b900f187e1125aa59dac7a562f65cdd&tid=ws&id=32');" data-ajax="false">西藏卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=c323d644aa218e5a057646f1df2f5221&tid=ws&id=33');" data-ajax="false">宁夏卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=27aa006eda8b66cd5e10659bb4d5e08f&tid=ws&id=34');" data-ajax="false">延边卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=10be06d61d4b84718b010e14f038acda&tid=ws&id=35');" data-ajax="false">康巴卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=2b6ac0549c4989890d676ad840d7e6ae&tid=ws&id=36');" data-ajax="false">大湾区卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=5dace3468cf2484bc79c209f68e13fdb&tid=ws&id=37');" data-ajax="false">广东珠江频道</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=b15f1a340e055b88f702526043c8bed2&tid=ws&id=38');" data-ajax="false">厦门卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=15282f7e167207cb6d89e6beaea06679&tid=ws&id=39');" data-ajax="false">安多卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=1e1372542e5c50e15efdf0d7f9df31ef&tid=ws&id=40');" data-ajax="false">农林卫视</a></li>
+				<li><a onclick="clicked('iptv.php?act=play&token=74e65b8508e7c6fcb0c1af29ede7b700&tid=ws&id=41');" data-ajax="false">三沙卫视</a></li>
+			</ul>
+		</div>
+		<!--end-->
+		<div data-role="footer">
+			<h4>版權聲明 &copy;1.6.0. 所有源來自互聯網搜索</h4>
+		</div>
+	</div>
+</body>
+<span style="display:none">
+	<script src="/tj.js?v=0208"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src='https://www.googletagmanager.com/gtag/js?id=G-KSS36MH2EN'></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'G-KSS36MH2EN');
+	</script>
+	<script>
+		!(function(c, i, e, b) {
+			var h = i.createElement('script');
+			var f = i.getElementsByTagName('script')[0];
+			h.type = 'text/javascript';
+			h.crossorigin = true;
+			h.onload = function() {
+				new c[b]['Monitor']().init({
+					id: 'KMDoyqEiXWm8evMY'
+				});
+			};
+			f.parentNode.insertBefore(h, f);
+			h.src = e;
+		})(window, document, 'https://sdk.51.la/perf/js-sdk-perf.min.js', 'LingQue');
+	</script>
+</span>
+
+</html>
