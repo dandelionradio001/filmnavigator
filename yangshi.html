@@ -1,134 +1,67 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-
 <head>
-  <title>央视頻道列表</title>
-  <meta charset="utf-8">
-  <meta name="application-name" content="網絡電視直播移動版,IPTV電視直播手机版" />
-  <meta name="title" content="央视頻道列表" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="網絡電視,網路電視,電視直播,手机版,電視,免費電視">
-  <meta name="description" content="網絡電視,網路電視,全球電視直播,高清電視,免費電視,IPTV電視直播手机版">
-  <link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.3.0/jquery.mobile-1.3.0.min.css" />
-  <script src="https://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
-  <script src="https://apps.bdimg.com/libs/jquerymobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
-  <script src="js/md5.js"></script>
-  <script src="/common.js?t=20240709"></script>
-  <script type="text/javascript">
-    function downad(url) {
-        var dtask = plus.downloader.createDownload(url, {}, function(d, status) {
-            if (status == 200) { // 下载成功
-                var path = d.filename;
-                plus.runtime.install(path);
-            } else { //下载失败
-                alert("Download failed: " + status);
-            }
-        });
-        dtask.start();
-    }
-  </script>
-  <style type="text/css">
-    span {
-        font-size: 14px;
-    }
-  </style>
-  <script>
-    function showAd() {
-        if (adView) {
-            return;
-        }
-        showAdView('1944664893');
-    }
-    document.addEventListener("plusready", showAd, false);
-  </script>
+<title>央视頻道列表</title>
+<meta charset="utf-8">
+<meta name="application-name" content="網絡電視直播移動版,IPTV電視直播手机版" />
+<meta name="title" content="央视頻道列表"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="網絡電視,網路電視,電視直播,手机版,電視,免費電視">
+<meta name="description" content="網絡電視,網路電視,全球電視直播,高清電視,免費電視,IPTV電視直播手机版">
+<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+<script src="https://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="https://apps.bdimg.com/libs/jquerymobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+<script src="js/md5.js"></script>
+<script src="/common.js?t=20240709"></script>
+<script type="text/javascript">
+function downad(url) {
+  var dtask = plus.downloader.createDownload(url, {}, function (d,status) {
+    if ( status == 200 ) { // 下载成功  
+      var path = d.filename;
+      plus.runtime.install(path); 
+    } else { //下载失败  
+      alert( "Download failed: " + status );   
+    }    
+  });  
+  dtask.start(); 
+}
+</script>
+<style type="text/css">
+span {font-size:14px;}
+</style>
+<script>function showAd(){
+  if(adView){
+    return;
+  }
+  showAdView('1710223350');
+} document.addEventListener("plusready",showAd,false);</script>
 </head>
-
 <body>
-<div data-role="page">
-  <div id="ad" style="width:100%;">
-    <div id="ad-container" style="width: 100%;"><a onclick="clickeda('');"><img src="https://d.iptv200.com/ad/7533370191402778604.jpg" width="100%" height="200px"></a></div>
-  </div>
-  <!--top-->
-  <div data-role="content">
-    <ul data-role="listview" data-inset="true" data-divider-theme="a" data-filter="true" data-filter-placeholder="搜寻">
-      <li><a onclick="clicked('iptv.php?act=play&token=1ccd42e5ecc652a295fba12d788266dc&tid=ys&id=1');" data-ajax="false">CCTV1综合</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=3c2797295dd229728b5fea0c735c2187&tid=ys&id=2');" data-ajax="false">CCTV2财经</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=8a1b4366fc5137824db9446229e1336c&tid=ys&id=3');" data-ajax="false">CCTV3综艺</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=e61839fdd9459380e38dbe5107c33760&tid=ys&id=4');" data-ajax="false">CCTV4中文国际</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=4f8dfaa8d9f24b553335fc6ca24f559d&tid=ys&id=5');" data-ajax="false">CCTV5体育</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=4b0ae200eaa93835b581ef2c68507088&tid=ys&id=6');" data-ajax="false">CCTV5+体育赛事</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=f4343cbfc4ecdd3f3eff61e4f6ad1ab2&tid=ys&id=7');" data-ajax="false">CCTV6电影</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=41a7427aded27c8a15071c7d62c91cca&tid=ys&id=8');" data-ajax="false">CCTV7国防军事</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=5fce87469551048acc08c3928129a632&tid=ys&id=9');" data-ajax="false">CCTV8电视剧</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=6f780825c446b3dbd4cc5f86bf754d5d&tid=ys&id=10');" data-ajax="false">CCTV9纪录</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=23ead3f457082f586b8544388320d432&tid=ys&id=11');" data-ajax="false">CCTV10科教</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=341bf87d0b0a414da3ee88e68e0f6b77&tid=ys&id=12');" data-ajax="false">CCTV11戏曲</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=8c40bb460f29cd849e280e0fe86f41fe&tid=ys&id=13');" data-ajax="false">CCTV12社会与法</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=4d4a97e66218dc015eda73ef80b17a81&tid=ys&id=14');" data-ajax="false">CCTV13新闻</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=f684ed8c665707b9da52a023f4e66146&tid=ys&id=15');" data-ajax="false">CCTV14少儿</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=fead31329f0ca72c50af5d9dd23916c1&tid=ys&id=16');" data-ajax="false">CCTV15音乐</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=e0dcc0d087bb16b7fbbd5c4f240873aa&tid=ys&id=17');" data-ajax="false">CCTV16奥林匹克</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=e5908bd9f138489c85c929f5dc1ffc2b&tid=ys&id=18');" data-ajax="false">CCTV17农业农村</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=f9708b4b3e58768205440c1866318668&tid=ys&id=19');" data-ajax="false">CCTV4k高清</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=e473f1018f4d50559b5bf6176caf64d7&tid=ys&id=20');" data-ajax="false">CCTV8k高清</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=15152237da6882467f028d15ad789f83&tid=ys&id=21');" data-ajax="false">CCTV4欧洲HD</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=52a7e7f28409b390787c5e62a327e1b4&tid=ys&id=22');" data-ajax="false">CCTV4美洲HD</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=aaecd58f775f47ed709e5720091860f1&tid=ys&id=23');" data-ajax="false">CGTN</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=80491ba930234f4000f19e4a45ab5d37&tid=ys&id=24');" data-ajax="false">CGTN纪录</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=fc449feb975d2963914703e22865ee8f&tid=ys&id=25');" data-ajax="false">CCTV阿拉伯语</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=d050b0058825f66d0ef5a08ca3545ba6&tid=ys&id=26');" data-ajax="false">CCTV法语</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=cbf95eae9b6fb1bb4cb22db90c1ae994&tid=ys&id=27');" data-ajax="false">CCTV西班牙语</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=afb17cce32805866cd2d13cd7e7a2eb2&tid=ys&id=28');" data-ajax="false">CCTV俄语</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=262c006ad8be6f7d525e82e9a4c10bc1&tid=ys&id=29');" data-ajax="false">CETV-1</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=d4256f80ac757af01ddf5f97cb0cbed5&tid=ys&id=30');" data-ajax="false">CETV-2</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=0346cb91fe4d111e11bcf5d9019cabf4&tid=ys&id=31');" data-ajax="false">CETV-3</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=496f0ed1277642228331f348a05336cd&tid=ys&id=32');" data-ajax="false">CETV-4</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=3e3a5ce45bb7dfffe3164ed9cac6d7c5&tid=ys&id=33');" data-ajax="false">CCTV兵器科技</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=483b6e71cfb587dcd9ceb0af4107aace&tid=ys&id=34');" data-ajax="false">CCTV怀旧剧场</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=9bfbdd81ec842c9cdf946008a56d07da&tid=ys&id=35');" data-ajax="false">CCTV第一剧场</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=c13b2eff348cb6dba4c656767ce15022&tid=ys&id=36');" data-ajax="false">CCTV风云剧场</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=01148e0d143650e0c3a6a6b47d5037cb&tid=ys&id=37');" data-ajax="false">CCTV风云音乐</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=eb2668cc718ee2c76e1008c657ca7f01&tid=ys&id=38');" data-ajax="false">CCTV风云足球</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=2c855e19559c6b4c89a7ddf051b328e0&tid=ys&id=39');" data-ajax="false">CCTV世界地理</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=9ac7dcb827d5e7e322dbd1c48daf9ffe&tid=ys&id=40');" data-ajax="false">CCTV文化精品</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=cc0189af462ac523ddbfd50ebef07e3e&tid=ys&id=41');" data-ajax="false">CCTV央视台球</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=1ea34fd87b9c2b8da1a23319e955334c&tid=ys&id=42');" data-ajax="false">CCTV高尔夫网球</a></li>
-      <li><a onclick="clicked('iptv.php?act=play&token=f9ccab252d6b6cea7e363361c82ef0ed&tid=ys&id=43');" data-ajax="false">CCTV女性时尚</a></li>
-    </ul>
-  </div>
-  <!--end-->
-  <div data-role="footer">
-    <h4>版權聲明 &copy;1.6.0. 所有源來自互聯網搜索</h4>
-  </div>
+<div data-role="page"><div id="ad" style="width:100%;"><div id="ad-container" style="width: 100%;"><a onclick="clickeda('');"><img src="https://d.iptv200.com/ad/7533370191402778604.jpg" width="100%" height="200px"></a></div></div>
+<!--top--><div data-role="content"><ul data-role="listview" data-inset="true" data-divider-theme="a" data-filter="true" data-filter-placeholder="搜寻"><li><a onclick="clicked('iptv.php?act=play&token=5e19959c2e6752e6fec5542edcb6af30&tid=ys&id=1');" data-ajax="false">CCTV1综合</a></li><li><a onclick="clicked('iptv.php?act=play&token=6cc3d7c7b50d9c934b9a1b8e5997bf75&tid=ys&id=2');" data-ajax="false">CCTV2财经</a></li><li><a onclick="clicked('iptv.php?act=play&token=34764c6090973a72ca814c357108491d&tid=ys&id=3');" data-ajax="false">CCTV3综艺</a></li><li><a onclick="clicked('iptv.php?act=play&token=26b60eb8c835809177bb54768d2c7ed3&tid=ys&id=4');" data-ajax="false">CCTV4中文国际</a></li><li><a onclick="clicked('iptv.php?act=play&token=2af64bb67339cf2d1fdb4cff151e6c08&tid=ys&id=5');" data-ajax="false">CCTV5体育</a></li><li><a onclick="clicked('iptv.php?act=play&token=b7fdea3b05c939d00c5d6064681173c5&tid=ys&id=6');" data-ajax="false">CCTV5+体育赛事</a></li><li><a onclick="clicked('iptv.php?act=play&token=de4200f2ef1791257ffb2b7e01e79ae2&tid=ys&id=7');" data-ajax="false">CCTV6电影</a></li><li><a onclick="clicked('iptv.php?act=play&token=8f4ab5ea1d1953b41d4feeb4aca711ea&tid=ys&id=8');" data-ajax="false">CCTV7国防军事</a></li><li><a onclick="clicked('iptv.php?act=play&token=38b2abb368424693a84c40760f41a6f3&tid=ys&id=9');" data-ajax="false">CCTV8电视剧</a></li><li><a onclick="clicked('iptv.php?act=play&token=954355572beff2404a8b827797aab40c&tid=ys&id=10');" data-ajax="false">CCTV9纪录</a></li><li><a onclick="clicked('iptv.php?act=play&token=c38974397c7f6e75fda7337dee4190b0&tid=ys&id=11');" data-ajax="false">CCTV10科教</a></li><li><a onclick="clicked('iptv.php?act=play&token=f2fba2d4c18421b8390ea0a67968d306&tid=ys&id=12');" data-ajax="false">CCTV11戏曲</a></li><li><a onclick="clicked('iptv.php?act=play&token=bb130725d2dac1e90b7ccdbfaa53976a&tid=ys&id=13');" data-ajax="false">CCTV12社会与法</a></li><li><a onclick="clicked('iptv.php?act=play&token=a23a441b96e2e02f27e4a0ee6a1aa952&tid=ys&id=14');" data-ajax="false">CCTV13新闻</a></li><li><a onclick="clicked('iptv.php?act=play&token=d5797cd479d6afde9648ca96f7d8b1e9&tid=ys&id=15');" data-ajax="false">CCTV14少儿</a></li><li><a onclick="clicked('iptv.php?act=play&token=c28bab4022a52d8cae5b7a0d5c7fbd49&tid=ys&id=16');" data-ajax="false">CCTV15音乐</a></li><li><a onclick="clicked('iptv.php?act=play&token=3efdbaaa111566a27423f04cb5b92c3f&tid=ys&id=17');" data-ajax="false">CCTV16奥林匹克</a></li><li><a onclick="clicked('iptv.php?act=play&token=b4081ab5d9e4a7332e8a23ffac62ab1f&tid=ys&id=18');" data-ajax="false">CCTV17农业农村</a></li><li><a onclick="clicked('iptv.php?act=play&token=cf712f15f67a284fb6c238615f97fabe&tid=ys&id=19');" data-ajax="false">CCTV4k高清</a></li><li><a onclick="clicked('iptv.php?act=play&token=27bedc7fc688c4db3f81937fa22563c2&tid=ys&id=20');" data-ajax="false">CCTV8k高清</a></li><li><a onclick="clicked('iptv.php?act=play&token=4e5303b20edfd3984ed38ea6ca9176d7&tid=ys&id=21');" data-ajax="false">CCTV4欧洲HD</a></li><li><a onclick="clicked('iptv.php?act=play&token=0d7a095e6497d0ef2444dea3d52ef9b3&tid=ys&id=22');" data-ajax="false">CCTV4美洲HD</a></li><li><a onclick="clicked('iptv.php?act=play&token=6f4c2613700d770d58dfd06d346ec650&tid=ys&id=23');" data-ajax="false">CGTN</a></li><li><a onclick="clicked('iptv.php?act=play&token=7bec4218908a6be7cff167fc69238508&tid=ys&id=24');" data-ajax="false">CGTN纪录</a></li><li><a onclick="clicked('iptv.php?act=play&token=c8ea58a5ff3cc218876ff541894327a3&tid=ys&id=25');" data-ajax="false">CCTV阿拉伯语</a></li><li><a onclick="clicked('iptv.php?act=play&token=1b420b29b90d27a2ca43929a9f05dd0c&tid=ys&id=26');" data-ajax="false">CCTV法语</a></li><li><a onclick="clicked('iptv.php?act=play&token=26aa472884860111abe99be4f2055878&tid=ys&id=27');" data-ajax="false">CCTV西班牙语</a></li><li><a onclick="clicked('iptv.php?act=play&token=737aa4208be835b6f4dde78eea227b85&tid=ys&id=28');" data-ajax="false">CCTV俄语</a></li><li><a onclick="clicked('iptv.php?act=play&token=975422e5db018854cdeb80f3a1efaaa5&tid=ys&id=29');" data-ajax="false">CETV-1</a></li><li><a onclick="clicked('iptv.php?act=play&token=e7739f08d0330f620ce6ccf062cc01ba&tid=ys&id=30');" data-ajax="false">CETV-2</a></li><li><a onclick="clicked('iptv.php?act=play&token=07cb1334c91671a73a781c67f20c496c&tid=ys&id=31');" data-ajax="false">CETV-3</a></li><li><a onclick="clicked('iptv.php?act=play&token=0a6c3a4adda99c892c4fad86df265cac&tid=ys&id=32');" data-ajax="false">CETV-4</a></li><li><a onclick="clicked('iptv.php?act=play&token=fc33352a60b68d5ddbc3522f467b5a57&tid=ys&id=33');" data-ajax="false">CCTV兵器科技</a></li><li><a onclick="clicked('iptv.php?act=play&token=1fc7129e756fe3cec3838706d7ab57cc&tid=ys&id=34');" data-ajax="false">CCTV怀旧剧场</a></li><li><a onclick="clicked('iptv.php?act=play&token=4f46a34b14abf7f0a7ac8fb2ff2c2616&tid=ys&id=35');" data-ajax="false">CCTV第一剧场</a></li><li><a onclick="clicked('iptv.php?act=play&token=da34a35635cda17cbd96d30abfbf01a1&tid=ys&id=36');" data-ajax="false">CCTV风云剧场</a></li><li><a onclick="clicked('iptv.php?act=play&token=b920712bb78a796350dc95924dd0f259&tid=ys&id=37');" data-ajax="false">CCTV风云音乐</a></li><li><a onclick="clicked('iptv.php?act=play&token=2f5dbaf056ddf792d3af731ac2d61641&tid=ys&id=38');" data-ajax="false">CCTV风云足球</a></li><li><a onclick="clicked('iptv.php?act=play&token=855a3cf76e8a1049d1f0c18dd3a00c15&tid=ys&id=39');" data-ajax="false">CCTV世界地理</a></li><li><a onclick="clicked('iptv.php?act=play&token=f53d6998879d3e0a54ca231934463229&tid=ys&id=40');" data-ajax="false">CCTV文化精品</a></li><li><a onclick="clicked('iptv.php?act=play&token=02a4aa4fa5b782b71924c1dfc57eb991&tid=ys&id=41');" data-ajax="false">CCTV央视台球</a></li><li><a onclick="clicked('iptv.php?act=play&token=a05350838847c315baa09cc02bfd6f90&tid=ys&id=42');" data-ajax="false">CCTV高尔夫网球</a></li><li><a onclick="clicked('iptv.php?act=play&token=8d459fd0b27d0a4dbced35ee77a4eac3&tid=ys&id=43');" data-ajax="false">CCTV女性时尚</a></li></ul></div>
+<!--end-->
+<div data-role="footer">
+<h4>版權聲明 &copy;1.4.7. 所有源來自互聯網搜索</h4>
+</div>
 </div>
 </body>
 <span style="display:none">
-	<script src="/tj.js?v=0208"></script><!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src='https://www.googletagmanager.com/gtag/js?id=G-KSS36MH2EN'></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-		gtag('config', 'G-KSS36MH2EN');
-	</script>
-	<script>
-		!(function(c, i, e, b) {
-			var h = i.createElement('script');
-			var f = i.getElementsByTagName('script')[0];
-			h.type = 'text/javascript';
-			h.crossorigin = true;
-			h.onload = function() {
-				new c[b]['Monitor']().init({
-					id: 'KMDoyqEiXWm8evMY'
-				});
-			};
-			f.parentNode.insertBefore(h, f);
-			h.src = e;
-		})(window, document, 'https://sdk.51.la/perf/js-sdk-perf.min.js', 'LingQue');
-	</script>
+<script src="/tj.js?v=0208"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src='https://www.googletagmanager.com/gtag/js?id=G-KSS36MH2EN'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KSS36MH2EN');
+</script>
+<script>
+  !(function(c,i,e,b){
+  var h=i.createElement('script');
+  var f=i.getElementsByTagName('script')[0];
+  h.type='text/javascript';
+  h.crossorigin=true;
+  h.onload=function(){new c[b]['Monitor']().init({id:'KMDoyqEiXWm8evMY'});};
+  f.parentNode.insertBefore(h,f);h.src=e;})(window,document,'https://sdk.51.la/perf/js-sdk-perf.min.js','LingQue');
+</script>
 </span>
-
 </html>

@@ -1,126 +1,67 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-
 <head>
-	<title>体育頻道列表</title>
-	<meta charset="utf-8">
-	<meta name="application-name" content="網絡電視直播移動版,IPTV電視直播手机版" />
-	<meta name="title" content="体育頻道列表" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="網絡電視,網路電視,電視直播,手机版,電視,免費電視">
-	<meta name="description" content="網絡電視,網路電視,全球電視直播,高清電視,免費電視,IPTV電視直播手机版">
-	<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.3.0/jquery.mobile-1.3.0.min.css" />
-	<script src="https://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
-	<script src="https://apps.bdimg.com/libs/jquerymobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
-	<script src="js/md5.js"></script>
-	<script src="/common.js?t=20240709"></script>
-	<script type="text/javascript">
-		function downad(url) {
-			var dtask = plus.downloader.createDownload(url, {}, function(d, status) {
-				if (status == 200) { // 下载成功  
-					var path = d.filename;
-					plus.runtime.install(path);
-				} else { //下载失败  
-					alert("Download failed: " + status);
-				}
-			});
-			dtask.start();
-		}
-	</script>
-	<style type="text/css">
-		span {
-			font-size: 14px;
-		}
-	</style>
-	<script>
-		function showAd() {
-			if (adView) {
-				return;
-			}
-			showAdView('1944664893');
-		}
-		document.addEventListener("plusready", showAd, false);
-	</script>
+<title>体育頻道列表</title>
+<meta charset="utf-8">
+<meta name="application-name" content="網絡電視直播移動版,IPTV電視直播手机版" />
+<meta name="title" content="体育頻道列表"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="網絡電視,網路電視,電視直播,手机版,電視,免費電視">
+<meta name="description" content="網絡電視,網路電視,全球電視直播,高清電視,免費電視,IPTV電視直播手机版">
+<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+<script src="https://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="https://apps.bdimg.com/libs/jquerymobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+<script src="js/md5.js"></script>
+<script src="/common.js?t=20240709"></script>
+<script type="text/javascript">
+function downad(url) {
+  var dtask = plus.downloader.createDownload(url, {}, function (d,status) {
+    if ( status == 200 ) { // 下载成功  
+      var path = d.filename;
+      plus.runtime.install(path); 
+    } else { //下载失败  
+      alert( "Download failed: " + status );   
+    }    
+  });  
+  dtask.start(); 
+}
+</script>
+<style type="text/css">
+span {font-size:14px;}
+</style>
+<script>function showAd(){
+  if(adView){
+    return;
+  }
+  showAdView('1683648511');
+} document.addEventListener("plusready",showAd,false);</script>
 </head>
-
 <body>
-	<div data-role="page">
-		<div id="ad" style="width:100%;">
-			<div id="ad-container" style="width: 100%;"><a onclick="clickeda('');"><img src="https://d.iptv200.com/ad/7533370191402778604.jpg" width="100%" height="200px"></a></div>
-		</div>
-		<!--top-->
-		<div data-role="content">
-			<ul data-role="listview" data-inset="true" data-divider-theme="a" data-filter="true" data-filter-placeholder="搜寻">
-				<li><a onclick="clicked('iptv.php?act=play&token=24420dda8072e5f57b4218d8125d72dd&tid=ty&id=1');" data-ajax="false">CCTV5体育</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=34ca7f01f260396e71f7028e425a8242&tid=ty&id=2');" data-ajax="false">CCTV5+体育赛事</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=8e9605eeee06b57a9d8857d905061504&tid=ty&id=3');" data-ajax="false">广东体育</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=d38dac961269f582b5eddb6c15345660&tid=ty&id=4');" data-ajax="false">劲爆体育</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=55b5da009b3514f9a83c9d2418891449&tid=ty&id=5');" data-ajax="false">五星体育</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=c113fd47dc98ce1427ad7cfe2ba1bef6&tid=ty&id=6');" data-ajax="false">新视觉HD</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=30b3db743014aa1ac9cf3c6a56c952f1&tid=ty&id=7');" data-ajax="false">CCTV16奥林匹克</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=31b372d6d033a0ea51eaccdf3d6cb4ef&tid=ty&id=12');" data-ajax="false">极速汽车</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=85d98e0a569c4548f45933d81ec934e3&tid=ty&id=13');" data-ajax="false">游戏风云</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=2fc4ee4135b16f879c1c3f30bef11d4a&tid=ty&id=14');" data-ajax="false">四海钓鱼</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=fdd8cc45f6afc5c3214ce3a1d001aa7c&tid=ty&id=15');" data-ajax="false">快乐垂钓</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=0cc7e82a3bbee41f3f6a020c56626c1c&tid=ty&id=16');" data-ajax="false">先锋乒羽</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=0e005327a9303ebf2a022e7cf8546d1b&tid=ty&id=19');" data-ajax="false">南国都市</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=c4000db8093dd983e8d3d60ec0cd14f7&tid=ty&id=20');" data-ajax="false">广州竞赛</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=881dd5c2b667e45ee81a8d9f511de3ef&tid=ty&id=21');" data-ajax="false">CCTV风云足球</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=7f7460406cf7080015da2604832baae1&tid=ty&id=22');" data-ajax="false">魅力足球</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=ea1b0661bc168bce92e7d33764834324&tid=ty&id=23');" data-ajax="false">緯來體育台</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=238c28b4c4fb724c6bb44e517321567b&tid=ty&id=24');" data-ajax="false">ELEVEN 1（DAZN 1）</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=8876f151fe87b3d27562323a698dfa77&tid=ty&id=25');" data-ajax="false">ELEVEN 2（DAZN 2）</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=c02081e6f13de958aca7fd3583159628&tid=ty&id=28');" data-ajax="false">爱尔达体育1台</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=981ad3e8e0e05509513e437d43a12c3c&tid=ty&id=29');" data-ajax="false">爱尔达体育2台</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=b7a6d75ef4a9647281070a81a5d0c551&tid=ty&id=30');" data-ajax="false">爱尔达体育3台</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=a541c7f94b24461bb02b055e35852e36&tid=ty&id=31');" data-ajax="false">爱尔达体育4台</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=d4491c79cb6feef969085fa29f35e519&tid=ty&id=41');" data-ajax="false">智林体育台</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=1f7f85f704b9c3dade35061d22e7ad2f&tid=ty&id=42');" data-ajax="false">时尚运动X</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=daa94a79bb4a58f844b7852c8c9cf711&tid=ty&id=43');" data-ajax="false">靖天育乐台</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=f10d26edd19ac4b35efa3bc98e0a7893&tid=ty&id=44');" data-ajax="false">博斯魅力</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=9c80ebf0d0068c1661a375a09e270c7e&tid=ty&id=45');" data-ajax="false">博斯高球1</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=bad9839efb21c46a6a6c9a34e5ca59c0&tid=ty&id=46');" data-ajax="false">博斯高球2</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=c9159a179ddfb213f221bb138388ef1a&tid=ty&id=47');" data-ajax="false">博斯运动1</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=c7128d3a2fa2618f459a1bae07b266dc&tid=ty&id=48');" data-ajax="false">博斯运动2</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=481d28b2148a4337743ff9a0c4a50a63&tid=ty&id=49');" data-ajax="false">博斯网球</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=c997e0b546c53cf40c9b1be910447aac&tid=ty&id=50');" data-ajax="false">博斯无限</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=37d56442a9d887d366116b05bbc16d13&tid=ty&id=51');" data-ajax="false">博斯无限2</a></li>
-				<li><a onclick="clicked('iptv.php?act=play&token=a8900acd608fc52757c17f32f84f1564&tid=ty&id=52');" data-ajax="false">TRACE SPORTS STARS</a></li>
-			</ul>
-		</div>
-		<!--end-->
-		<div data-role="footer">
-			<h4>版權聲明 &copy;1.6.0. 所有源來自互聯網搜索</h4>
-		</div>
-	</div>
+<div data-role="page"><div id="ad" style="width:100%;"><div id="ad-container" style="width: 100%;"><a onclick="clickeda('');"><img src="https://d.iptv200.com/ad/7533370191402778604.jpg" width="100%" height="200px"></a></div></div>
+<!--top--><div data-role="content"><ul data-role="listview" data-inset="true" data-divider-theme="a" data-filter="true" data-filter-placeholder="搜寻"><li><a onclick="clicked('iptv.php?act=play&token=2481f7cf2b67b0785dadc74b62219851&tid=ty&id=1');" data-ajax="false">CCTV5体育</a></li><li><a onclick="clicked('iptv.php?act=play&token=935ba428b7f3ce0a32cdaf6e9c5d551b&tid=ty&id=2');" data-ajax="false">CCTV5+体育赛事</a></li><li><a onclick="clicked('iptv.php?act=play&token=f3e48ed07256f9eeef687e149499f527&tid=ty&id=3');" data-ajax="false">广东体育</a></li><li><a onclick="clicked('iptv.php?act=play&token=7eafdc64e65b99d31509c330a714ebb3&tid=ty&id=4');" data-ajax="false">劲爆体育</a></li><li><a onclick="clicked('iptv.php?act=play&token=46a8fa0998c453fdcfa03b0b7c47b335&tid=ty&id=5');" data-ajax="false">五星体育</a></li><li><a onclick="clicked('iptv.php?act=play&token=d4addf2f9c71c137c4de0c3e5b441f93&tid=ty&id=6');" data-ajax="false">新视觉HD</a></li><li><a onclick="clicked('iptv.php?act=play&token=6d0d0acdf3ed889a1b1a838925c10813&tid=ty&id=7');" data-ajax="false">CCTV16奥林匹克</a></li><li><a onclick="clicked('iptv.php?act=play&token=108d4b79107b108e42c05f69b60a535d&tid=ty&id=12');" data-ajax="false">极速汽车</a></li><li><a onclick="clicked('iptv.php?act=play&token=4ff523815c88566b707776ac21201a5d&tid=ty&id=13');" data-ajax="false">游戏风云</a></li><li><a onclick="clicked('iptv.php?act=play&token=059c2ac4515b22e010cd757925775a98&tid=ty&id=14');" data-ajax="false">四海钓鱼</a></li><li><a onclick="clicked('iptv.php?act=play&token=79f47f628b42e342aef5855e7e1b929f&tid=ty&id=15');" data-ajax="false">快乐垂钓</a></li><li><a onclick="clicked('iptv.php?act=play&token=bd1f2df435fe6cbe215bf1162ecfac9d&tid=ty&id=16');" data-ajax="false">先锋乒羽</a></li><li><a onclick="clicked('iptv.php?act=play&token=43b30c101225f0d344842413ddcee1c3&tid=ty&id=19');" data-ajax="false">南国都市</a></li><li><a onclick="clicked('iptv.php?act=play&token=86ef6be2d4b41825082a74f06ddbd25c&tid=ty&id=20');" data-ajax="false">广州竞赛</a></li><li><a onclick="clicked('iptv.php?act=play&token=4dd1f0dcecb15ec8f05ce8728bfbde41&tid=ty&id=21');" data-ajax="false">CCTV风云足球</a></li><li><a onclick="clicked('iptv.php?act=play&token=fae3ea137653a1ce37dea1c21142cf4c&tid=ty&id=22');" data-ajax="false">魅力足球</a></li><li><a onclick="clicked('iptv.php?act=play&token=01835ff1d286edc92d7f6363a827831f&tid=ty&id=23');" data-ajax="false">緯來體育台</a></li><li><a onclick="clicked('iptv.php?act=play&token=207a50157efd1243ae9823739ff80f1a&tid=ty&id=24');" data-ajax="false">ELEVEN 1（DAZN 1）</a></li><li><a onclick="clicked('iptv.php?act=play&token=6646cc0e6f8cfc64c353df8bc878da1b&tid=ty&id=25');" data-ajax="false">ELEVEN 2（DAZN 2）</a></li><li><a onclick="clicked('iptv.php?act=play&token=d13465b5f099605aad87036bfcedd1bc&tid=ty&id=28');" data-ajax="false">爱尔达体育1台</a></li><li><a onclick="clicked('iptv.php?act=play&token=f3a0f843bfa95e5a1aa1ee95798f1b61&tid=ty&id=29');" data-ajax="false">爱尔达体育2台</a></li><li><a onclick="clicked('iptv.php?act=play&token=dc282fd9527437f1b4570a1876e89e7d&tid=ty&id=30');" data-ajax="false">爱尔达体育3台</a></li><li><a onclick="clicked('iptv.php?act=play&token=840222e5dfa54c88b453bf75476a920d&tid=ty&id=31');" data-ajax="false">爱尔达体育4台</a></li><li><a onclick="clicked('iptv.php?act=play&token=685c02a5df74b9cf5de18ea6160258c7&tid=ty&id=41');" data-ajax="false">智林体育台</a></li><li><a onclick="clicked('iptv.php?act=play&token=8ca32a132cb3b725fa5ffd4c9359d91f&tid=ty&id=42');" data-ajax="false">时尚运动X</a></li><li><a onclick="clicked('iptv.php?act=play&token=f7e985e44637ce274c5e6f361e25eb26&tid=ty&id=43');" data-ajax="false">靖天育乐台</a></li><li><a onclick="clicked('iptv.php?act=play&token=5c8d80a295143cb2db6f38ef971a7242&tid=ty&id=44');" data-ajax="false">博斯魅力</a></li><li><a onclick="clicked('iptv.php?act=play&token=5562c4104b2284ff1613cd872129d13f&tid=ty&id=45');" data-ajax="false">博斯高球1</a></li><li><a onclick="clicked('iptv.php?act=play&token=10b25452cd658c5fa48163a18a0bd62d&tid=ty&id=46');" data-ajax="false">博斯高球2</a></li><li><a onclick="clicked('iptv.php?act=play&token=899b3aa49f6179bc4a6487d2edc2ce05&tid=ty&id=47');" data-ajax="false">博斯运动1</a></li><li><a onclick="clicked('iptv.php?act=play&token=351320d3282104e4a9f1525bffa10969&tid=ty&id=48');" data-ajax="false">博斯运动2</a></li><li><a onclick="clicked('iptv.php?act=play&token=6af8b80173bba7a629019b0a1c544bc7&tid=ty&id=49');" data-ajax="false">博斯网球</a></li><li><a onclick="clicked('iptv.php?act=play&token=05be039902b3dbb5544cdfbdc691c46a&tid=ty&id=50');" data-ajax="false">博斯无限</a></li><li><a onclick="clicked('iptv.php?act=play&token=2cc27172a8e5890c0b28c470da461867&tid=ty&id=51');" data-ajax="false">博斯无限2</a></li><li><a onclick="clicked('iptv.php?act=play&token=9f6c208a1c355c4840b01a63bf691ab0&tid=ty&id=52');" data-ajax="false">TRACE SPORTS STARS</a></li></ul></div>
+<!--end-->
+<div data-role="footer">
+<h4>版權聲明 &copy;1.4.7. 所有源來自互聯網搜索</h4>
+</div>
+</div>
 </body>
 <span style="display:none">
-	<script src="/tj.js?v=0208"></script><!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src='https://www.googletagmanager.com/gtag/js?id=G-KSS36MH2EN'></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-		gtag('config', 'G-KSS36MH2EN');
-	</script>
-	<script>
-		!(function(c, i, e, b) {
-			var h = i.createElement('script');
-			var f = i.getElementsByTagName('script')[0];
-			h.type = 'text/javascript';
-			h.crossorigin = true;
-			h.onload = function() {
-				new c[b]['Monitor']().init({
-					id: 'KMDoyqEiXWm8evMY'
-				});
-			};
-			f.parentNode.insertBefore(h, f);
-			h.src = e;
-		})(window, document, 'https://sdk.51.la/perf/js-sdk-perf.min.js', 'LingQue');
-	</script>
+<script src="/tj.js?v=0208"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src='https://www.googletagmanager.com/gtag/js?id=G-KSS36MH2EN'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KSS36MH2EN');
+</script>
+<script>
+  !(function(c,i,e,b){
+  var h=i.createElement('script');
+  var f=i.getElementsByTagName('script')[0];
+  h.type='text/javascript';
+  h.crossorigin=true;
+  h.onload=function(){new c[b]['Monitor']().init({id:'KMDoyqEiXWm8evMY'});};
+  f.parentNode.insertBefore(h,f);h.src=e;})(window,document,'https://sdk.51.la/perf/js-sdk-perf.min.js','LingQue');
+</script>
 </span>
-
 </html>
