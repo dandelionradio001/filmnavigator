@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>港澳台頻道列表</title>
+<meta charset="utf-8">
+<meta name="application-name" content="網絡電視直播移動版,IPTV電視直播手机版" />
+<meta name="title" content="港澳台頻道列表"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="網絡電視,網路電視,電視直播,手机版,電視,免費電視">
+<meta name="description" content="網絡電視,網路電視,全球電視直播,高清電視,免費電視,IPTV電視直播手机版">
+<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+<script src="https://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="https://apps.bdimg.com/libs/jquerymobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+<script src="js/md5.js"></script>
+<script src="/common.js?t=20240709"></script>
+<script type="text/javascript">
+function downad(url) {
+  var dtask = plus.downloader.createDownload(url, {}, function (d,status) {
+    if ( status == 200 ) { // 下载成功  
+      var path = d.filename;
+      plus.runtime.install(path); 
+    } else { //下载失败  
+      alert( "Download failed: " + status );   
+    }    
+  });  
+  dtask.start(); 
+}
+</script>
+<style type="text/css">
+span {font-size:14px;}
+</style>
+<script>function showAd(){
+  if(adView){
+    return;
+  }
+  showAdView('1710223350');
+} document.addEventListener("plusready",showAd,false);</script>
+</head>
+<body>
+<div data-role="page"><div id="ad" style="width:100%;"><div id="ad-container" style="width: 100%;"><a onclick="clickeda('');"><img src="https://d.iptv200.com/ad/7533370191402778604.jpg" width="100%" height="200px"></a></div></div>
+<!--top--><div data-role="content"><ul data-role="listview" data-inset="true" data-divider-theme="a" data-filter="true" data-filter-placeholder="搜寻"><li><a onclick="clicked('iptv.php?act=play&token=fa51a12168f35755979c47ae6e57fa7c&tid=gt&id=1');" data-ajax="false">凤凰卫视中文台</a></li><li><a onclick="clicked('iptv.php?act=play&token=77d101cdc658b0ec6c3150a0eb446985&tid=gt&id=2');" data-ajax="false">凤凰卫视资讯台</a></li><li><a onclick="clicked('iptv.php?act=play&token=60f01ca49402eb01b78dbbdedd72a36d&tid=gt&id=3');" data-ajax="false">凤凰卫视香港台</a></li><li><a onclick="clicked('iptv.php?act=play&token=b5083c2a57408facdd4065d8f6ef7e53&tid=gt&id=11');" data-ajax="false">香港有线新闻台</a></li><li><a onclick="clicked('iptv.php?act=play&token=d3420cc4d14e361c94d948391ee002a7&tid=gt&id=12');" data-ajax="false">香港有线18台</a></li><li><a onclick="clicked('iptv.php?act=play&token=7bd186a4d8328aee53be5db900b9f69d&tid=gt&id=16');" data-ajax="false">NOW直播台</a></li><li><a onclick="clicked('iptv.php?act=play&token=dfa2b12ec61efac95f547cfb8dc01b51&tid=gt&id=17');" data-ajax="false">NOW新闻台</a></li><li><a onclick="clicked('iptv.php?act=play&token=1d206b6b2e60be5072440c9dd87fa052&tid=gt&id=18');" data-ajax="false">NOW财经台</a></li><li><a onclick="clicked('iptv.php?act=play&token=1e3cc13960641d6a72d47ca154215c66&tid=gt&id=19');" data-ajax="false">ViuTV</a></li><li><a onclick="clicked('iptv.php?act=play&token=a59bed09d3757a2559c39d89d7c56062&tid=gt&id=20');" data-ajax="false">ViuTV6</a></li><li><a onclick="clicked('iptv.php?act=play&token=34ed1e452f02a01e6f3e6f82259c930d&tid=gt&id=22');" data-ajax="false">HOY国际财经台</a></li><li><a onclick="clicked('iptv.php?act=play&token=38ca8137dcc5fe0494532cb142d19c00&tid=gt&id=23');" data-ajax="false">HOY资讯台</a></li><li><a onclick="clicked('iptv.php?act=play&token=8cba0ab3c91b790f38fc5a0963776f84&tid=gt&id=24');" data-ajax="false">HOY TV</a></li><li><a onclick="clicked('iptv.php?act=play&token=6fd6a535abe02a524495307788dab117&tid=gt&id=26');" data-ajax="false">港台电视31</a></li><li><a onclick="clicked('iptv.php?act=play&token=5450011879a0edb9dcd18bb78f68347f&tid=gt&id=27');" data-ajax="false">港台电视32</a></li><li><a onclick="clicked('iptv.php?act=play&token=45ac82c72558c5e237136727ccf17dcc&tid=gt&id=30');" data-ajax="false">香港卫视HKS</a></li><li><a onclick="clicked('iptv.php?act=play&token=8d5470d46e7f9686c0a5115d2be8f4c8&tid=gt&id=35');" data-ajax="false">澳门莲花</a></li><li><a onclick="clicked('iptv.php?act=play&token=29f5254c3bf608206277455003b4a634&tid=gt&id=36');" data-ajax="false">澳門卫视</a></li><li><a onclick="clicked('iptv.php?act=play&token=d9d4fed1dde82a94c92f47aa92815836&tid=gt&id=37');" data-ajax="false">澳视资讯</a></li><li><a onclick="clicked('iptv.php?act=play&token=a618a13fdac0eb0f790606f5b6aac7a7&tid=gt&id=38');" data-ajax="false">澳視澳門</a></li><li><a onclick="clicked('iptv.php?act=play&token=2a7f10d3b9fa52813b903a55ec1023ad&tid=gt&id=39');" data-ajax="false">澳門Macau</a></li><li><a onclick="clicked('iptv.php?act=play&token=c277c9edd174e12320ef0c6a8523ad1f&tid=gt&id=40');" data-ajax="false">澳视综艺</a></li><li><a onclick="clicked('iptv.php?act=play&token=d118e247930813d91e251032b156a52a&tid=gt&id=41');" data-ajax="false">澳亚卫视</a></li><li><a onclick="clicked('iptv.php?act=play&token=bd81f0527117ba12b146d8dadadec290&tid=gt&id=43');" data-ajax="false">中天新闻台</a></li><li><a onclick="clicked('iptv.php?act=play&token=c67795d73900d197f7854674120b93ca&tid=gt&id=44');" data-ajax="false">东森新闻台</a></li><li><a onclick="clicked('iptv.php?act=play&token=8bc7c5be41b8e28ce24a3ffcfdc11feb&tid=gt&id=45');" data-ajax="false">东森财经新闻台</a></li><li><a onclick="clicked('iptv.php?act=play&token=767f7343c0879d0a6240de42b6583200&tid=gt&id=46');" data-ajax="false">中视新闻台</a></li><li><a onclick="clicked('iptv.php?act=play&token=9cee8cc9312a2f2dec1f4f9f74a8fb2c&tid=gt&id=47');" data-ajax="false">台视新闻台</a></li><li><a onclick="clicked('iptv.php?act=play&token=8f95d0d516854e27971d83ed017368c2&tid=gt&id=48');" data-ajax="false">三立新闻台</a></li><li><a onclick="clicked('iptv.php?act=play&token=762adf27a2b4ce662e9523b31eefb112&tid=gt&id=49');" data-ajax="false">非凡新闻</a></li><li><a onclick="clicked('iptv.php?act=play&token=36d987312fba4db05e4d37aee6cd958e&tid=gt&id=50');" data-ajax="false">民视新闻台</a></li><li><a onclick="clicked('iptv.php?act=play&token=8348be2b9af9cbddcd26e3cfaab3b697&tid=gt&id=51');" data-ajax="false">华视新闻台</a></li><li><a onclick="clicked('iptv.php?act=play&token=d45adb3c459678a5da5d6e2f1551e9ba&tid=gt&id=52');" data-ajax="false">镜电视新闻台</a></li><li><a onclick="clicked('iptv.php?act=play&token=cdda5093406f39f80127b0dbfd4f1c72&tid=gt&id=53');" data-ajax="false">寰宇新闻台</a></li><li><a onclick="clicked('iptv.php?act=play&token=1a1cef2d72d0917c771723d5c2c027ff&tid=gt&id=54');" data-ajax="false">寰宇新闻台湾台</a></li><li><a onclick="clicked('iptv.php?act=play&token=643c73e316699c066a9151bfc062f5dd&tid=gt&id=55');" data-ajax="false">TVBS新闻台</a></li><li><a onclick="clicked('iptv.php?act=play&token=6f3bbdacbfd7a0403663a441e1b6cbc2&tid=gt&id=56');" data-ajax="false">TVBS HD</a></li><li><a onclick="clicked('iptv.php?act=play&token=704c18ab44ae71ceb0bd76679f0c6acc&tid=gt&id=60');" data-ajax="false">中视HD</a></li><li><a onclick="clicked('iptv.php?act=play&token=c7a1206f3bb23cc0bfc6b8ecdd006645&tid=gt&id=61');" data-ajax="false">台视HD</a></li><li><a onclick="clicked('iptv.php?act=play&token=2a2a2d01426b6a749867393fffdcaf44&tid=gt&id=62');" data-ajax="false">民视HD</a></li><li><a onclick="clicked('iptv.php?act=play&token=7343a52fcf0e1631662862814b45700d&tid=gt&id=63');" data-ajax="false">华视HD</a></li><li><a onclick="clicked('iptv.php?act=play&token=f57c36aabc1636021c380cd8099bad53&tid=gt&id=73');" data-ajax="false">緯來體育台</a></li><li><a onclick="clicked('iptv.php?act=play&token=344a1723f54d3f230520694eb183a3a8&tid=gt&id=74');" data-ajax="false">纬来日本台</a></li><li><a onclick="clicked('iptv.php?act=play&token=a62b2c3f7aa0f618507e63f2a776a0b3&tid=gt&id=75');" data-ajax="false">纬来育乐台</a></li><li><a onclick="clicked('iptv.php?act=play&token=c9f8020a648d3cd290cc009569239760&tid=gt&id=76');" data-ajax="false">ELEVEN 1（DAZN 1）</a></li><li><a onclick="clicked('iptv.php?act=play&token=ed275ac4944433fe4ee4917c74a52416&tid=gt&id=77');" data-ajax="false">ELEVEN 2（DAZN 2）</a></li><li><a onclick="clicked('iptv.php?act=play&token=d89a6301f3420995783b39ec1f1f2a04&tid=gt&id=79');" data-ajax="false">爱尔达体育1台</a></li><li><a onclick="clicked('iptv.php?act=play&token=590ddefbdd8fb94a1e1e2382b01f2e9b&tid=gt&id=80');" data-ajax="false">爱尔达体育2台</a></li><li><a onclick="clicked('iptv.php?act=play&token=e4624bf111ffd90ed2a851748c1a3319&tid=gt&id=81');" data-ajax="false">爱尔达体育3台</a></li><li><a onclick="clicked('iptv.php?act=play&token=8874a7a04bcb059d671a368c544d5970&tid=gt&id=82');" data-ajax="false">爱尔达体育4台</a></li></ul></div>
+<!--end-->
+<div data-role="footer">
+<h4>版權聲明 &copy;1.4.7. 所有源來自互聯網搜索</h4>
+</div>
+</div>
+</body>
+<span style="display:none">
+<script src="/tj.js?v=0208"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src='https://www.googletagmanager.com/gtag/js?id=G-KSS36MH2EN'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KSS36MH2EN');
+</script>
+<script>
+  !(function(c,i,e,b){
+  var h=i.createElement('script');
+  var f=i.getElementsByTagName('script')[0];
+  h.type='text/javascript';
+  h.crossorigin=true;
+  h.onload=function(){new c[b]['Monitor']().init({id:'KMDoyqEiXWm8evMY'});};
+  f.parentNode.insertBefore(h,f);h.src=e;})(window,document,'https://sdk.51.la/perf/js-sdk-perf.min.js','LingQue');
+</script>
+</span>
+</html>
