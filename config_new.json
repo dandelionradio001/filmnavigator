@@ -1,5 +1,5 @@
 {
-  "version": "4.0.0.0.1",
+  "version": "4.0.0.0.2",
   "home": "https://dandelionradio001.github.io/filmnavigator/home.html",
   "host": "https://www.555a9.com",
   "tv_macHost": "http://tv.haoqu99.com/",
@@ -26,7 +26,6 @@
   ],
   "live_m3u8s": [
     ".m3u8",
-    ".mp4",
     "play.php",
     "bplayer.php",
     "vplay.php"
